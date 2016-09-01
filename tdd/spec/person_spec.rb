@@ -28,8 +28,8 @@ describe "Person class - entry in phonebook" do
 	
 	# Expected Outcomes
 
-    expect(person.emails).to eq ["joe@bloggs.com", "bloggs@joe.com"]
-    expect(person.phone_numbers).to eq ["0712345678","0798765432"]
+    expect(@person.emails).to eq ["joe@bloggs.com", "bloggs@joe.com"]
+    expect(@person.phone_numbers).to eq ["0712345678","0798765432"]
   end
 
   it "should remove created emails from stored emails" do
@@ -45,7 +45,7 @@ describe "Person class - entry in phonebook" do
 
 
     #Expected Outcomes
-    expect(person.emails.length).to eq (elength - 1)
-    expect(person.phone_numbers.length).to eq (plength - 1)
+    expect(@person.emails.length).to eq (elength - 1)
+    expect(@person.phone_numbers.length).to eq (plength - 1)
   end
 end

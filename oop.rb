@@ -7,10 +7,11 @@ class Person
 
 	def initialize(first_name, surname, dob = nil)
 		@dob = Date.parse(dob).strftime('%d %B %Y')
-		@first_name = first_name
-		@surname = surname
+		@first_name = first_name.capitalize
+		@surname = surname.capitalize
 		@emails = []
 		@phone_numbers = []
+
 	end
 
 	# def set_first_name(first_name)
@@ -58,7 +59,7 @@ class Person
 	end
 
 	def show_message
-		puts "My name is #{@get_full_name} and I was born on #{@dob}.\n"\
+		puts "My name is #{@first_name} #{@surname} and I was born on #{@dob}.\n"\
 		"Their email addresses are: #{@emails}.\n"\
 		"Their phone numbers are #{@phone_numbers} "
 	end
@@ -84,14 +85,9 @@ class Person
 
 end
 
-
-
-
-
-
-
-
-
+def import_new_people
+	@newpeople = YAML.load_file "newpeople.yml"
+end
 
 
 

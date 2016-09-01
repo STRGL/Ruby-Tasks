@@ -1,0 +1,21 @@
+people:
+  wayne:
+    name: wayne
+    surname: rooney
+    dob: 25th March 1991
+    emails:
+      - waynerooney@manchesterunited.com
+      - wazza@gmail.com
+    phone_numbers:
+      - 0765432871
+      - 0129563458
+  marcus:
+    name: marcus
+    surname: rashford
+    dob: 20th Feb 2007
+    emails:
+      - marcusrashford@manchesterunited.com
+      - m-rash@gmail.com
+    phone_numbers:
+      - 0762345871
+      - 0129999358
